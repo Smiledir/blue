@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bluetooth</string>
+
+    <!-- Buttons -->
+    <string name="scan_button">Scan</string>
+
+    <!-- Content Description -->
+    <string name="arrow_up_button_description">Arrow Up</string>
+    <string name="arrow_right_button_description">Arrow Right</string>
+    <string name="arrow_down_button_description">Arrow Down</string>
+    <string name="arrow_left_button_description">Arrow Left</string>
+    <string name="stop_button_description">Stop Button</string>
+    <string name="reversal_button_description">Reversal Button</string>
+    <string name="autonomous_button_description">Autonomous Button</string>
+</resources>

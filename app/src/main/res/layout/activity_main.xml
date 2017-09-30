@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="blue.oem.com.blue.MainActivity">
+
+     <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonUp"
+        android:src="@drawable/ic_arrow_right_bold"
+        android:contentDescription="@string/arrow_up_button_description"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:scaleType="fitCenter"
+        android:rotation="270"
+        android:layout_toLeftOf="@+id/imageButtonRight"
+        android:layout_toStartOf="@+id/imageButtonRight"
+        android:onClick="buttonUpClick" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonRight"
+        android:src="@drawable/ic_arrow_right_bold"
+        android:contentDescription="@string/arrow_right_button_description"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:scaleType="fitCenter"
+        android:rotation="0"
+        android:layout_below="@+id/imageButtonUp"
+        android:layout_toRightOf="@+id/imageButtonDown"
+        android:layout_toEndOf="@+id/imageButtonDown"
+        android:onClick="buttonRightClick" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonDown"
+        android:src="@drawable/ic_arrow_right_bold"
+        android:contentDescription="@string/arrow_down_button_description"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:scaleType="fitCenter"
+        android:rotation="90"
+        android:layout_below="@+id/imageButtonUp"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonDownClick" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonLeft"
+        android:src="@drawable/ic_arrow_right_bold"
+        android:contentDescription="@string/arrow_left_button_description"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:scaleType="fitCenter"
+        android:rotation="180"
+        android:layout_below="@+id/imageButtonUp"
+        android:layout_toLeftOf="@+id/imageButtonDown"
+        android:layout_toStartOf="@+id/imageButtonDown"
+        android:onClick="buttonLeftClick" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonStop"
+        android:src="@drawable/ic_stop"
+        android:contentDescription="@string/stop_button_description"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/imageButtonReversal"
+        android:layout_toLeftOf="@+id/imageButtonReversal"
+        android:layout_toStartOf="@+id/imageButtonReversal"
+        android:onClick="buttonStopClick" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonReversal"
+        android:src="@drawable/ic_loop_white"
+        android:contentDescription="@string/reversal_button_description"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/imageButtonAutonomous"
+        android:layout_toLeftOf="@+id/imageButtonAutonomous"
+        android:layout_toStartOf="@+id/imageButtonAutonomous"
+        android:onClick="buttonReversalClick" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButtonAutonomous"
+        android:src="@drawable/ic_settings_input_antenna"
+        android:contentDescription="@string/autonomous_button_description"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/imageButtonRight"
+        android:layout_toRightOf="@+id/imageButtonDown"
+        android:layout_toEndOf="@+id/imageButtonDown"
+        android:layout_marginTop="57dp"
+        android:onClick="buttonAutonomousClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tStatus"
+        android:layout_below="@+id/imageButtonLeft"
+        android:layout_alignRight="@+id/imageButtonRight"
+        android:layout_alignEnd="@+id/imageButtonRight"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignLeft="@+id/imageButtonLeft"
+        android:layout_alignStart="@+id/imageButtonLeft"
+        android:gravity="center"
+        android:layout_above="@+id/imageButtonStop" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultListView"
+        android:layout_below="@+id/imageButtonStop"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

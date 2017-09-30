@@ -1,0 +1,14 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     >
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_scan"
+        android:icon="@android:drawable/stat_sys_data_bluetooth"
+        android:title="@string/scan_button"
+        android:orderInCategory = "100"
+        android:onClick="buttonScan"
+        app:showAsAction = "always"/>
+
+</menu>
